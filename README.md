@@ -9,26 +9,22 @@ Asegúrate de tener Node.js y npm instalados en tu máquina. Luego, sigue estos 
 1. **Clona este repositorio:**
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-proyecto.git
-   cd tu-proyecto
+   git clone https://github.com/MrDavidAlv/react-nextjs-typescript.git
 
+   cd react-nextjs-typescript
 2. **Instalación de Tailwind CSS**
 
    ```bash
    npm install
-
 ## Configuración
 1. **Instalación de Tailwind CSS:**
 
    ```bash
    npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
-
 2. **Configuración de Tailwind CSS:**
 
    ```bash
    npx tailwindcss init -p
-
-
 3. **Integración con PostCSS:**
 
    ```javascript
@@ -38,12 +34,10 @@ Asegúrate de tener Node.js y npm instalados en tu máquina. Luego, sigue estos 
             autoprefixer: {},
         },
     };
-
 ## Axios
 1. **Instalación de Axios:**
    ```bash
    npm install axios
-
 2. **Configuración de Axios:**
 
 En este proyecto, Axios se configura en src/utils/axiosInstance.ts. Asegúrate de que la configuración de Axios sea la adecuada para tu caso de uso.
@@ -87,7 +81,6 @@ En este proyecto, Axios se configura en src/utils/axiosInstance.ts. Asegúrate d
    ```bash
    npm run dev
    ```
-
    Esto iniciará el servidor de desarrollo de Next.js en http://localhost:3000.
 
 2. **Navegación:**
@@ -95,12 +88,12 @@ En este proyecto, Axios se configura en src/utils/axiosInstance.ts. Asegúrate d
    * La página principal muestra una tabla de posts desde la API.
    * Al hacer clic en un título de post, se redirige a una página de detalles del post.
 
-
-
    ![Tabla de posts](/images/table.PNG)
    _Tabla de posts desde la API_
 
-
-
    ![Detalles del post](/images/item.PNG)
    _Vista de detalles de un post_
+
+
+## Referencia
+Este proyecto se basa en el tutorial [Clon de X con Next.js 13, Supabase, React, TypeScript y TailwindCSS](https://www.youtube.com/watch?v=V_kD2q_aoy8) del youtuber [midulive](https://www.youtube.com/@midulive)
