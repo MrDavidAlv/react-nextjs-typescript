@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proyecto React con Next.js, TypeScript, Axios y Tailwind CSS
 
-## Getting Started
+Este proyecto es una aplicación web básica que utiliza Next.js como framework de React, TypeScript para tipado estático, Axios para hacer peticiones HTTP a una API externa, y Tailwind CSS para estilizar la interfaz de usuario.
 
-First, run the development server:
+## Instalación
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Asegúrate de tener Node.js y npm instalados en tu máquina. Luego, sigue estos pasos:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clona este repositorio:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```bash
+   git clone https://github.com/tu-usuario/tu-proyecto.git
+   cd tu-proyecto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Instalación de Tailwind CSS**
 
-## Learn More
+   ```bash
+   npm install
 
-To learn more about Next.js, take a look at the following resources:
+## Configuración
+1. **Instalación de Tailwind CSS:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Configuración de Tailwind CSS:**
 
-## Deploy on Vercel
+   ```bash
+   npx tailwindcss init -p
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. **Integración con PostCSS:**
+
+   ```javascript
+   module.exports = {
+    plugins: {
+            tailwindcss: {},
+            autoprefixer: {},
+        },
+    };
+
+## Axios
+1. **Instalación de Axios:**
+   ```bash
+   npm install axios
+
+2. **Configuración de Axios:**
+
+En este proyecto, Axios se configura en src/utils/axiosInstance.ts. Asegúrate de que la configuración de Axios sea la adecuada para tu caso de uso.
+
+## Estructura del Proyecto
+   ```bash
+   react-nextjs-typescript/
+   │
+   ├── src/
+   │   ├── components/
+   │   │   └── PostTable.tsx
+   │   │
+   │   ├── pages/
+   │   │   ├── post/
+   │   │   │   └── [id].tsx
+   │   │   └── index.tsx
+   │   │
+   │   └── utils/
+   │       └── axiosInstance.ts
+   │
+   ├── public/
+   │   ├── favicon.ico
+   │   └── vercel.svg
+   │
+   ├── styles/
+   │   ├── globals.css
+   │   └── Home.module.css
+   │
+   ├── tailwind.config.js
+   ├── postcss.config.js
+   ├── tsconfig.json
+   ├── next.config.js
+   ├── package.json
+   ├── package-lock.json
+   └── README.md
+   ```
+
+## Uso
+
+1. **Ejecuta la aplicación:**
+   ```bash
+   npm run dev
+   ```
+
+   Esto iniciará el servidor de desarrollo de Next.js en http://localhost:3000.
+
+2. **Navegación:**
+
+   * La página principal muestra una tabla de posts desde la API.
+   * Al hacer clic en un título de post, se redirige a una página de detalles del post.
+
+
+
+   ![Tabla de posts](/images/table.PNG)
+   _Tabla de posts desde la API_
+
+
+
+   ![Detalles del post](/images/item.PNG)
+   _Vista de detalles de un post_
