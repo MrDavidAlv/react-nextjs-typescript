@@ -1,5 +1,20 @@
 # Proyecto React con Next.js, TypeScript, Axios y Tailwind CSS
 
+<div align="center" style="background-color: grey; padding: 10px;">
+    <a href="https://www.typescriptlang.org/" target="_blank">
+        <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" title="Typescript" alt="Typescript" width="40" height="40"/>
+    </a>
+    <a href="https://nextjs.org/learn" target="_blank">
+        <img src="https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original-wordmark.svg" title="Next.js" alt="Next.js" width="40" height="40"/>
+    </a>
+    <a href="https://react.dev/" target="_blank">
+        <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>
+    </a>
+</div>
+
+
+
+
 Este proyecto es una aplicación web básica que utiliza Next.js como framework de React, TypeScript para tipado estático, Axios para hacer peticiones HTTP a una API externa, y Tailwind CSS para estilizar la interfaz de usuario.
 
 ## Instalación
